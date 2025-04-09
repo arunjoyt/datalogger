@@ -242,3 +242,18 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {
+        "doctype": "Role",
+        "filters": {
+            "name": ["in", ["Data Logger",]]
+        }
+    },
+    {
+        "doctype": "Custom DocPerm",
+        "filters": {
+            "role": ["in", ["Data Logger",]]
+        }
+    },
+]
+
